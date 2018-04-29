@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Japanese Pragmatics Questionnaire</title>
+		<style>
+			html, body {
+				height: 100%;
+			}
+
+			html {
+				display: table;
+				margin: auto;
+			}
+
+			body {
+				display: table-cell;
+				vertical-align: middle;
+				padding: 20px;
+			}
+
+			button {
+				width: 200px;
+				height: 50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="main" style="display: none;">
+			<h3>日本語についての語用論的一調査</h3>
+
+			<p>
+				下のボタンをクリックして、アンケートをご記入ください。
+			</p>
+
+			<form action="" id="flyer">
+				<button type="submit">アンケートへ</button>
+			</form>
+		</div>
+
+		<script>
+			let arr = [
+				"https://goo.gl/forms/vTYQDUoZwHzJZjz42",
+				"https://goo.gl/forms/PkPqLMXq8DZ5LtB03",
+				"https://goo.gl/forms/9hdlogTAvNZZbLkf1",
+				"https://goo.gl/forms/9oFhXdcjsgHar3Uk2",
+				"https://goo.gl/forms/l3yKrIwWppugG8fT2",
+				"https://goo.gl/forms/N5f0ttQV5vglUsor2",
+				"https://goo.gl/forms/wtcEGfc1BifY9qQl1\'"
+			];
+			
+			let ind = Math.floor(Math.random() * arr.length);
+
+			document.getElementById("flyer").setAttribute("action", arr[ind]);
+			document.getElementById("main").setAttribute("style", "");
+		</script>
+	</body>
+</html>
